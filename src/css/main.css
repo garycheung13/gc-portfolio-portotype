@@ -7435,8 +7435,10 @@ img {
   padding-top: 48px;
   padding-bottom: 24px; }
 
+.case-header__container {
+  background-color: #1F2E8D; }
+
 .case-header__text {
-  background-color: #1F2E8D;
   color: white; }
   .case-header__text hr {
     border: none;
@@ -7521,8 +7523,12 @@ img {
 .card {
   border: none;
   border-radius: 8px; }
-  .card img {
-    border-radius: 8px 0px 0px 8px; }
+  @media (min-width: 1200px) {
+    .card img {
+      border-radius: 8px 0px 0px 8px; } }
+  @media (max-width: 1199.98px) {
+    .card img {
+      border-radius: 8px 8px 0px 0px; } }
 
 .text-link:hover {
   transition: all 350ms ease-out;

@@ -27,8 +27,12 @@
     padding-bottom: 24px;
 }
 
-.case-header__text {
+.case-header__container {
     background-color: $color-main-dark;
+}
+
+.case-header__text {
+
     color: white;
 
     hr {

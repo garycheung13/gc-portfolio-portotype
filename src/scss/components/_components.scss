@@ -14,15 +14,18 @@
     border: none;
     border-radius: 8px;
 
-    img {
-        border-radius: 8px 0px 0px 8px;
+    // border radius for image, positioned for large screens
+    @include media-breakpoint-up(xl) {
+        img {
+            border-radius: 8px 0px 0px 8px;
+        }
     }
 
-    // a:hover {
-    //     transition: all 350ms ease-out;
-    //     opacity: .5;
-    //     // filter: brightness(75%) saturate(140%);
-    // }
+    @include media-breakpoint-down(lg) {
+        img {
+            border-radius: 8px 8px 0px 0px;
+        }
+    }
 }
 
 .text-link:hover {
