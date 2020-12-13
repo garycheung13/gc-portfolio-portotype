@@ -7448,8 +7448,10 @@ img {
   .case-header__text p {
     width: 100%; }
   @media (min-width: 768px) {
-    .case-header__text p {
-      width: 80%; } }
+    .case-header__text {
+      padding-left: 48px; }
+      .case-header__text p {
+        width: 80%; } }
 
 .case-subsection__header {
   margin-bottom: 24px; }

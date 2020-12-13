@@ -46,7 +46,10 @@
         width: 100%;
     }
 
+
+
     @include media-breakpoint-up(md) {
+        padding-left: 48px;
 
         p {
             width: 80%;
